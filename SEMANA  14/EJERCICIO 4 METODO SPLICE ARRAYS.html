@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO SPLICE</title>
+</head>
+<body>
+    <center>
+        <img src="./Img/Incap.png" alt="" width="150" height="150">
+        <h1>METODO SPLICE ARRAYS</h1>
+        <h2>BUSQUEDA / ELIMINACION DE ELEMENTO</h2>
+        <br><br>
+        <p>EL NUEVO ARRAYS ES EL SIGUIENTE</p>
+        <script>
+            let std=new Array();
+            let num;
+            //Captura
+            num=parseInt(prompt("Ingrese cantidad de STDs a guardar en arrays"));
+            for (i=0;i<num;i++){
+            //Recorre arrays
+            std[i]=prompt("Imgrese nombre STD nuevo al arrays.."+i);
+        }
+        //BUSQUEDA
+        let datob=prompt("Ingrese STD a eliminar en arrays");
+        let fin=std.indexOf(dator.trim());
+        //APLICAR METODO SPLICE
+        if (find>-1){
+            let index=std.splice(find,1)//Eliminar en el mismo sitio
+            alert("STD exitosamente eliminado en array"+"\n"+"LISTA NUEVA..."+std);
+        }else{
+            alert("ERROR... STD NO SE ENCUENTRA EN ARRAY..."+std)
+        }
+        //IMPRIMIR POR PANTALL
+        document.write(std+',');
+        console.log(std);
+        </script>
+    </center>
+</body>
+</html>
